@@ -1,4 +1,4 @@
-package com.nettydemo.Chapter1;
+package com.nettydemo.Demo1;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -9,7 +9,6 @@ import io.netty.handler.codec.http.*;
 import io.netty.util.CharsetUtil;
 
 import java.net.URI;
-import java.nio.charset.Charset;
 
 /***
  *@className TestHttpServerHandler
@@ -21,6 +20,8 @@ import java.nio.charset.Charset;
  ***/
 @ChannelHandler.Sharable
 public class TestHttpServerHandler extends SimpleChannelInboundHandler<HttpObject> {
+
+    //channelRead也调用的channelRead0方法
     @Override
     protected void channelRead0(ChannelHandlerContext channelHandlerContext, HttpObject httpObject) throws Exception {
 

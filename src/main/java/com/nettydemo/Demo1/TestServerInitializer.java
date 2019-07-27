@@ -1,6 +1,5 @@
-package com.nettydemo.Chapter1;
+package com.nettydemo.Demo1;
 
-import com.nettydemo.Chapter1.TestHttpServerHandler;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.ChannelPipeline;
 import io.netty.channel.socket.SocketChannel;
