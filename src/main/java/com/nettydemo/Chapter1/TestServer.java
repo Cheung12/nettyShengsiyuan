@@ -17,6 +17,7 @@ import io.netty.channel.socket.nio.NioServerSocketChannel;
 public class TestServer {
     public static void main(String[] args) throws  Exception{
         //定义两个goup boss接收到请求后转交给worker处理
+
         EventLoopGroup bossgroup = new NioEventLoopGroup();
         EventLoopGroup workergroup = new NioEventLoopGroup();
         try {
